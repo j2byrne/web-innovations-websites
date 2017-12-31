@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:active, a:link, a:hover, a:visited {
+  color: black;
+}
+
+body {
+  font-family: fontAwesome, 'sans serif';
+}
+/*******************
+HEADER
+*******************/
+#logo {
+  display: block;
+  margin: 0 auto;
+  height: 14em;
+}
+
+/*******************
+Footer
+*******************/
+footer {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #000;
+  position:absolute;
+  left: 0;
+}
+
+.bottom {
+  height: 40px;
+  clear: both;
+  width: 100%;
+}
+
+footer div {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#facebook {
+  height: 30px;
+}
+
+#twitter {
+  height: 25px;
+}
+
+/*******************
+Contact Us
+*******************/
+form {
+  display: block;
+  width: 50%;
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 30px auto -50px auto;
+}
+
+form .title {
+  margin-left: 5%;
+}
+
+form input[type="text"] {
+  outline: 1px solid #BDBDBD;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 90%;
+  display: block;
+  margin: 0 5% 20px 5%;
+  outline: 0;
+  box-shadow: 0;
+}
+
+form textarea {
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 90%;
+  display: block;
+  margin: 0 5% 20px 5%;
+  resize: none;
+}
+
+form input[type="submit"] {
+  padding: 7px 18px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 0 20px 5%;
+  background-color: white;
+}
+
+/*******************
+NAV BAR
+*******************/
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav .menuButton {
+  display: none;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1.7em;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  width: auto;
+}
+
+nav li a#current {
+  text-decoration: underline;
+}
+
+/*******************
+Container
+*******************/
+
+.container {
+  width: 94%;
+  margin: 0 3%;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  clear: both;
+}
+
+.row {
+  width: 100%;
+  margin-bottom: 30px;
+  display: table;
+}
+
+.column {
+  margin-top: 2em;
+  width: 47%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.grid img {
+  max-height: 100%;
+}
+
+.column:nth-child(even) {
+  padding-left: 1%;
+  padding-right: 2%;
+}
+
+.column:nth-child(odd) {
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
+.column img {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+
+.column img:nth-of-type(1) {
+  margin-top: 0;
+}
+
+/*******************
+Font
+*******************/
+#name {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1em;
+  margin-left:30px;
+}
+
+.sub-title {
+  font-size: 25px;
+}
+
+.sub-title {
+  margin-top: 1em;
+}
+
+.sub-title:not(:first-of-type) {
+  margin-top: 1em;
+}
+
+.para {
+  margin-top: 1em;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/*******************
+About The Rally
+*******************/
+.country-list {
+  column-count: 2;
+  list-style-position: inside;
+}
+
+/*******************
+General
+*******************/
+.button {
+  padding: 0.5em 1em;
+  border-radius: 0.1em;
+  color: white;
+  font-size: 20px;
+  width: auto;
+  background-color: black;
+  display: inline-block;
+  float: right;
+}
+
+@media screen and (max-width: 870px) {
+  /*******************
+  HEADER
+  *******************/
+  #logo {
+    height: 150px;
+  }
+
+  /*******************
+  NAV BAR
+  *******************/
+  nav li {
+    width: 100%;
+    padding: 0.5em auto;
+  }
+
+  nav .menuButton {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    height: 30px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .nav-expand {
+    display: block !important;
+  }
+
+  /*******************
+  Container
+  *******************/
+
+  .container {
+    width: 96%;
+    margin: 0 2%;
+    margin-bottom: 50px;
+  }
+
+  .column {
+    margin-top: 2em;
+    display: block;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .column:nth-child(even) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .column:nth-child(odd) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .column img {
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+
+  .column img:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  /*******************
+  Contact Form
+  *******************/
+
+  form {
+    display: block;
+    width: 95%;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 30px 2.5% -50px 2.5%;
+  }
+
+  .container img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,636 @@
+
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Muli);
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+a:focus, a:active, a:visited, a:link {
+	text-decoration: none;
+}
+
+/*---------------------
+		Layout
+---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("img/background.png");
+}
+
+header {
+	min-height: 100px;
+	max-width: 926px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+
+.logo {
+	height: 100px;
+	float: left;
+}
+
+.logo2 {
+	height: 100px;
+	float: left;
+	margin-left: 261.5px;
+}
+
+.container {
+	max-width: 926px;
+	margin: 0 auto;
+	background-color: #CDE5E3;
+	color: #000;
+	overflow: hidden;
+	position: relative;
+}
+
+.container:before {
+	position: absolute;
+	background: #353857;
+	left: 26.4%;
+	content: '';
+	width: 0.3%;
+	bottom: 60px;
+	top: 30px;
+}
+
+.sidebar {
+	float: left;
+	width: 26.1%;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+}
+
+.sidebar-inner {
+	width: 96%;
+	margin: 30px 2%;
+}
+
+.main {
+	float: right;
+	width: 73%;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+}
+
+.main-inner {
+	width: 96%;
+	margin: 30px 2%;
+}
+
+footer {
+	width: 100%;
+	height: 30px;
+	background-color: #505050;
+	display: table;
+}
+
+.footer-inner {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #e3e3e3;
+}
+
+.border-inner {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*---------------------
+		General
+---------------------*/
+
+p {
+	text-indent: 30px;
+	font-size: 20px;
+	padding: 10px 0 10px 20px;
+}
+
+.badge-link {
+	display: table;
+	width: 160px;
+	min-height: 80px;
+	margin: 0 auto;
+	background-color: #222541;
+	border-radius: 13px;
+}
+
+.badge {
+	display: table-cell;
+	text-indent: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	color: #000;
+}
+
+.badge:hover {
+	color: #505050;
+}
+
+.badge:focus, .badge:active, .badge:visited, .badge:link, {
+	color: #000;
+}
+
+.img {
+	width: 500px;
+	display: block;
+	margin: 10px auto 0 auto;
+}
+
+.img-side {
+	width: 250px;
+	float: right;
+	margin: 15px;
+}
+
+/*---------------------
+		Sidebar
+---------------------*/
+
+.logo-sidebar {
+	width: 90%;
+	margin: 0 5%;
+	height: 500px;
+	display: block;
+}
+
+.img-sidebar {
+	width: 90%;
+	margin: 20px 5% 0 5%;
+	display: block;
+}
+
+/*---------------------
+		Menu
+---------------------*/
+
+nav {
+	background-color: #222541;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.menuicon {
+	display: none;
+}
+
+.navbar {
+	list-style: none;
+	max-width: 100%;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	padding: 7px 28px;
+}
+
+nav li a.current {
+	background-color: #CDE5E3;
+	color: #000;
+}
+
+nav li a:hover, nav li a:focus {
+	background-color: #D2E2EC;
+	color: #000;
+}
+
+/*---------------------
+		Index
+---------------------*/
+
+.index-body {
+	overflow: hidden;
+}
+
+.start-block-left {
+	float: left;
+	width: 35%;
+	height: 100%;
+}
+
+.start-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.start-text {
+	margin-top: 20px;
+	font-family: 'Indie Flower', cursive;
+}
+
+.start-block-right {
+	width: 65%;
+	display: table;
+	height: 100%;
+	position: fixed;
+	left: 50%;
+}
+
+.index-logo {
+	max-height: 150px;
+	display: block;
+	margin-left: -60px;
+}
+
+.start-block-right-div {
+	position: fixed;
+	top: 50%;
+	margin-top: -70px;
+	margin-left: 5%;
+}
+
+.start-button {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.start-button-text {
+	height: 20px;
+	width: 180px;
+	padding: 7px 10px;
+	position: relative;
+	left: 80%;
+	top: 90%;
+	border-radius: 3px;
+	background-color: RGBA(256, 256, 256, .7);
+	color: #000;
+	text-align: center;
+	font-size: 17px;
+}
+
+/*---------------------
+		Home
+---------------------*/
+
+.ul-home {
+	margin-left: 70px;
+	margin-bottom: -10px;
+}
+
+
+/*---------------------
+		About Me
+---------------------*/
+
+.img-about {
+	height: 350px;
+}
+
+/*---------------------
+		Services
+---------------------*/
+
+.img-services {
+	height: 350px;
+	width: 400px;
+	display: block;
+	margin: 10px auto 0 auto;
+}
+
+/*---------------------
+		FAQ
+---------------------*/
+
+.ul-faq {
+	margin-left: 50px;
+}
+
+.ul-faq li {
+	margin-left: -70px;
+	list-style-type: none;
+}
+
+.question:before {
+	content: '\2022';
+	margin-right: 25px;
+}
+
+.question {
+	text-indent: 0;
+	cursor: pointer;
+}
+
+.answer {
+	display: none;
+	cursor: pointer;
+	margin-left: 35px;
+}
+
+/*---------------------
+		Contact Us
+---------------------*/
+
+.contact-info {
+	float: right;
+	width: 235px;
+}
+
+.contact-form {
+	display: block;
+	max-width: 300px;
+	border: 1px solid #222541;
+	border-radius: 4px;
+	padding: 10px 0;
+}
+
+.contact-form-heading {
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+.contact-input {
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	padding: 6px 12px;
+	font-size: 15px;
+	width: 90%;
+	display: block;
+	margin: 0 5% 10px 5%;
+}
+
+.contact-textarea {
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	padding: 6px 12px;
+	font-size: 16px;
+	width: 90%;
+	display: block;
+	margin: 0 5% 10px 5%;
+	resize: none;
+}
+
+.contact-submit {
+	padding: 7px 18px;
+	border: 1px solid #222541;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-left: 5%;
+	background-color: #FFF;
+	color: #222541;
+}
+
+#ul-contact {
+	padding-left: 20px;
+	padding-bottom: 15px;
+}
+
+#ul-contact li {
+	padding-bottom: 10px;
+}
+
+/*---------------------
+		Desktop
+---------------------*/
+
+@media screen and (min-width: 561px) {
+
+	.hide-desktop {
+		display: none;
+	}
+
+}
+
+/*---------------------
+		Mobile
+---------------------*/
+
+@media screen and (max-width: 560px) {
+
+	/*---------------------
+			General
+	---------------------*/
+
+	.img {
+		width: 90%;
+		padding:  5% 0 0 0;
+	}
+
+	/*---------------------
+			Layout
+	---------------------*/
+
+	body {
+		background-color: #FFF;
+		background-image: none;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.container:before {
+		display: none;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.logo2 {
+		display: none;
+	}
+
+	.slogan {
+		line-height: 35px;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sidebar {
+		width: 100%;
+		margin: 0;
+		border-bottom: 2px solid #505050;
+	}
+
+	.sidebar-inner {
+		padding-bottom: 15px;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.hide-desktop {
+		width: 90%;
+		margin: 20px 5% 0 5%;
+	}
+
+	.main {
+		width: 100%;
+		margin: 0;
+		padding: 0 20px;
+	}
+
+	.main-inner {
+		padding-top: 15px;
+
+	}
+
+	.border {
+		display: none;
+	}
+
+	/*---------------------
+			Index
+	---------------------*/
+
+	.start-block-left {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+		height: 50%;
+	}
+
+	.start-img {
+		width: auto;
+		margin: 0 auto;
+		height: 100%;
+		max-width: auto;
+	}
+
+	.start-block-right {
+		float: none;
+		height: 50%;
+		width: 100%;
+		left: 0;
+	}
+
+	.start-text {
+		text-align: center;
+		width: 100%;
+		margin-top: -30px;
+	}
+
+	.start-block-right-div {
+		position: fixed;
+		top: 55%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.start-button-text {
+		left: 50%;
+		top: 50%;
+		margin-top: -50px;
+		margin-left: -105px;
+		font-size: 15px;
+		bottom: 100px;
+	}
+
+	.index-logo {
+		width: 100%;
+	}
+
+
+	/*---------------------
+			Sidebar
+	---------------------*/
+
+	.logo-sidebar {
+		display: none;
+	}
+
+	.img-sidebar {
+		display: none;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	/*---------------------
+			About Me
+	---------------------*/
+
+	.img-about {
+		width: 60%;
+		height: 200px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*---------------------
+			Services
+	---------------------*/
+
+	.img-services {
+		width: 90%;
+		padding:  5% 0 0 0;
+	}
+
+	/*---------------------
+			Contact Us
+	---------------------*/
+
+	.contact-form {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*---------------------
+			Menu
+	---------------------*/
+
+	.menuicon {
+		display: block;
+		font-size: 83%;
+		cursor: pointer;
+		width: 45px;
+		float: right;
+	}
+
+	nav {
+		height: auto;
+		width: 100%;
+	}
+
+	.navbar {
+		display: none;
+		clear: both;
+		width: 100%;
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.nav-expand {
+		display: block;
+	}
+
+	nav li {
+		float: none;
+		text-align: center;
+		border-bottom: 1px solid #505050;
+		width: 90%;
+		padding: 0;
+		margin: 0 5%;
+	}
+
+	nav li:last-child {
+		border-bottom: none;
+	}
+}

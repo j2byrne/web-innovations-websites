@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Charities - Team Kangoo Anywhere</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style>
+      .mySlides {display:none}
+      .w3-left, .w3-right, .w3-badge {cursor:pointer}
+      .w3-badge {height:13px;width:13px;padding:0}
+      a.twitter-timeline {
+        /* Buttonish */
+        display: inline-block;
+        padding: 6px 12px 6px 30px;
+        margin: 10px 0;
+        border: #ccc solid 1px;
+        border-radius: 3px;
+        background: #f8f8f8 url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzIgNzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcyIDcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiIvPg0KPHBhdGggZmlsbD0iIzU1YWNlZSIgZD0iTTY4LjgxMiwxNS4xNDFjLTIuMzQ4LDEuMDM5LTQuODY5LDEuNzQzLTcuNTE5LDIuMDZjMi43MDMtMS42Miw0Ljc3OC00LjE4Nyw1Ljc1Ni03LjI0NGMtMi41MjksMS41LTUuMzMsMi41OTItOC4zMTMsMy4xNzYNCglDNTYuMzQ5LDEwLjU5MSw1Mi45NDgsOSw0OS4xODIsOWMtNy4yMjksMC0xMy4wOTIsNS44NjEtMTMuMDkyLDEzLjA5M2MwLDEuMDI2LDAuMTE4LDIuMDIxLDAuMzM4LDIuOTgxDQoJYy0xMC44ODUtMC41NDgtMjAuNTI4LTUuNzU3LTI2Ljk4Ny0xMy42NzljLTEuMTI2LDEuOTM2LTEuNzcxLDQuMTg0LTEuNzcxLDYuNTgxYzAsNC41NDIsMi4zMTIsOC41NTEsNS44MjQsMTAuODk4DQoJYy0yLjE0Ni0wLjA2OS00LjE2NS0wLjY1Ny01LjkzLTEuNjM4Yy0wLjAwMiwwLjA1NS0wLjAwMiwwLjExLTAuMDAyLDAuMTYyYzAsNi4zNDUsNC41MTMsMTEuNjM4LDEwLjUwNCwxMi44NA0KCWMtMS4xMDEsMC4yOTgtMi4yNTYsMC40NTctMy40NDksMC40NTdjLTAuODQ2LDAtMS42NjctMC4wNzgtMi40NjUtMC4yMzFjMS42NjcsNS4yLDYuNDk5LDguOTg2LDEyLjIzLDkuMDkNCgljLTQuNDgyLDMuNTEyLTEwLjEyOSw1LjYwNi0xNi4yNiw1LjYwNmMtMS4wNTUsMC0yLjA5Ni0wLjA2MS0zLjEyMi0wLjE4NGM1Ljc5NCwzLjcxNywxMi42NzYsNS44ODIsMjAuMDY3LDUuODgyDQoJYzI0LjA4MywwLDM3LjI1MS0xOS45NDksMzcuMjUxLTM3LjI0OWMwLTAuNTY2LTAuMDE0LTEuMTM0LTAuMDM5LTEuNjk0QzY0LjgzOCwyMC4wNjgsNjcuMDU4LDE3Ljc2NSw2OC44MTIsMTUuMTQxeiIvPg0KPC9zdmc+DQo=") 8px 8px no-repeat;
+        background-size: 1em 1em;
+
+        /* Text */
+        font: normal 12px/18px Helvetica, Arial, sans-serif;
+        color: #333;
+        white-space: nowrap;
+      }
+
+      a.twitter-timeline:hover,
+      a.twitter-timeline:focus {
+        background-color: #dedede;
+      }
+
+      /* Color Highlight for keyboard navigation */
+
+      a.twitter-timeline:focus {
+        outline: none;
+        border-color: #0089cb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="img/logo.png" />
+      <nav>
+        <img class="menuButton" src="img/menu.png" alt="button to open menu"/>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="about-the-rally.html">About The Rally</a></li>
+          <li><a href="our-car.html">Our Car</a></li>
+          <li><a id="current" href="charities.html">Charities</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="contact-us.php">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <div class="container">
+      <h1 style = "margin: 10px; float: left;" class="title">About the Charities</h1>
+      <a href="https://www.gofundme.com/team-kangoo-anywhere-fundraising"><p style="float: right" class="button">Donate</p></a>
+    </div>
+
+    <div class="container" style="padding-top: 10px">
+      <div class="column" style="clear: both">
+        <h3 class="title">Cool Earth</h3>
+        <p class="para">
+          Cool Earth is a UK-based international NGO which strives to protect endangered rainforest in order to fight against global warming, protect the local ecosystems and to provide employment for local people.
+        </p>
+        <p class="para">
+          In 2015, it was named Charity of the Year in its category at the Civil Society Media Charity Awards and best International NGO at the PEA Awards.
+        </p>
+        <p class="para">
+          For more information, visit their website:<br /><a href="https://www.coolearth.org">coolearth.org</a>
+        </p>
+        <h3 style="margin-top: 50px" class="title">LauraLynn Children's Hospice</h3>
+        <p class="para">
+          As a team, we decided to fundraise for the LauraLynn Children's Hospice. LauraLynn is a hospice for children with life-limiting conditions and residential care for young adults with disabilities.
+        </p>
+        <p class="para">
+          It is the only children's hospice in Ireland and was set up in 2001. They aim to offer care for the child as well as support and information for families. LauraLynn believes in caring for children with life-limiting conditions by providing respite, transitional, crisis, home support, and end-of-life care.
+        </p>
+        <p class="para">
+          For more information, visit their website:<br /><a href="https://www."http://lauralynn.ie/".org">lauralynn.ie</a>
+        </p>
+      </div>
+      <div class="column">
+        <a class="twitter-timeline" data-height="700" href="https://twitter.com/KangooAnywhere/lists/charities">A Twitter List by james_byrne10</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    <div class="bottom"></div>
+    <footer>
+      <div>
+        <a href="https://www.facebook.com/TeamKangooAnywhere/" target="_blank"><img id="facebook" src="img/facebook.png" /></a>
+        <a href="https://twitter.com/KangooAnywhere" target="_blank"><img id="twitter" src="img/twitter.png" /></a>
+        <a href="https://www.youtube.com/channel/UCESshqu4KG_Ni7ayI0TT1OA" target="_blank"><img id="youtube" src="img/youtube.png" /></a>
+      </div>
+    </footer>
+</html>

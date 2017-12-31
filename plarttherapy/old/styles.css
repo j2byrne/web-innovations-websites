@@ -1,0 +1,454 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+a:focus, a:active, a:visited, a:link {
+	text-decoration: none;
+}
+
+/*---------------------
+		Layout
+---------------------*/
+
+body {
+	background-image: url("img/background.png");
+}
+
+header {
+	height: 100px;
+	max-width: 926px;
+	margin: 0 auto;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+.logo {
+	max-height: 100px;
+	float: left;
+	display: block;
+}
+
+.slogan {
+	float: right;
+	width: auto;
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.container {
+	max-width: 926px;
+	margin: 0 auto 20px auto;
+	padding: 2% 0 0 0;
+	background-color: lightblue;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.sidebar {
+	float: left;
+	margin: 0 2%;
+	width: 28%;
+	color: #505050;
+	margin-bottom: 25px;
+}
+
+.sidebar-inner {
+	padding: 20px 5%;
+	width: 90%;
+	border-radius: 3px;
+	background-color: #fff;
+}
+
+.main {
+	float: right;
+	width: 66%;
+	margin-right: 2%;
+	color: #505050;
+	margin-bottom: 25px;
+}
+
+.main-inner {
+	padding: 10px 3%;
+	width: 94%;
+	border-radius: 3px;
+	background-color: #fff;
+}
+
+footer {
+	width: 100%;
+	height: 30px;
+	display: table;
+	background-color: #505050;
+}
+
+.footer-inner {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #e3e3e3;
+}
+
+.border-inner {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*---------------------
+		General
+---------------------*/
+
+p {
+	text-indent: 30px;
+	font-size: 20px;
+	padding: 10px 0 10px 20px;
+}
+
+ul {
+	padding-left: 70px;
+	margin-bottom: -20px;
+}
+
+li {
+	font-size: 18px;
+}
+
+.badge-link {
+	display: table;
+	width: 160px;
+	min-height: 80px;
+	margin: 0 auto;
+	background-color: green;
+	border-radius: 13px;
+}
+
+.badge {
+	display: table-cell;
+	text-indent: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFF;
+}
+
+.badge:hover {
+	color: #505050;
+}
+
+.badge:focus, .badge:active, .badge:visited, .badge:link, {
+	color: #FFF;
+}
+
+.img {
+	width: 500px;
+	display: block;
+	margin: 5px auto 0px auto;
+}
+
+.img-side {
+	width: 250px;
+	float: right;
+	margin: 15px;
+}
+
+/*---------------------
+		Sidebar
+---------------------*/
+
+.logo-sidebar {
+	width: 90%;
+	margin: 20px 5% 0 5%;
+	height: 500px;
+}
+
+.img-sidebar {
+	width: 90%;
+	margin: 20px 5% 0 5%;
+}
+
+/*---------------------
+		Start
+---------------------*/
+
+.start-container {
+}
+
+.start-block-left {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.start-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.start-block-right {
+	width: 50%;
+	display: table;
+	height: 100%;
+	position: fixed;
+	left: 50%;
+}
+
+.start-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.start-button {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.start-button-text {
+	height: 70px;
+	width: 170px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-left: -85px;
+	margin-top: -35px;
+	background-color: RGBA(256, 256, 256, .5);
+	color: #000;
+}
+
+/*---------------------
+		Menu
+---------------------*/
+
+nav {
+	width: 100%;
+	overflow: hidden;
+}
+
+.menuicon {
+	display: none;
+}
+
+.navbar {
+	list-style: none;
+	margin: 0 auto;
+	width: 738px;
+	padding: 0 21px;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+	text-align: center;
+	border-bottom: 8px solid transparent; 
+	margin-right: 30px;
+}
+
+nav li:nth-of-type(1) {
+	margin-left: 30px;
+}
+
+nav li a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	padding: 10px 15px 7px 15px;
+	background-color: #1e00cc;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+nav li.current {
+	border-bottom: 8px solid lightblue;
+}
+
+nav li a.current {
+	background-color: lightblue;
+}
+
+nav li a:hover, nav li a:focus, nav li a:active, nav li a:visited, nav li a:link, {
+	color: #FFF;
+}
+
+/*---------------------
+		FAQ
+---------------------*/
+
+table tr td {
+	vertical-align: top;
+}
+
+table tr td:nth-child(odd) {
+	padding-right: 15px;
+	font-size: 20px;
+}
+
+table .question {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+
+table .question1, table .question1  {
+	padding-top: 0;
+}
+
+/*---------------------
+		Contact Us
+---------------------*/
+
+.contact-info {
+	float: right;
+	width: 235px;
+}
+
+.contact-form {
+	margin: 30px 0 0 0 0;
+	display: block;
+	max-width: 300px;
+	border: 1px solid #505050;
+	border-radius: 4px;
+	padding: 10px 0;
+}
+
+.contact-form-heading {
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+.contact-input {
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	padding: 6px 12px;
+	font-size: 15px;
+	width: 90%;
+	display: block;
+	margin: 0 5% 10px 5%;
+}
+
+.contact-textarea {
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	padding: 6px 12px;
+	font-size: 16px;
+	width: 90%;
+	display: block;
+	margin: 0 5% 10px 5%;
+	resize: none;
+}
+
+.contact-submit {
+	padding: 7px 18px;
+	border: 1px solid #505050;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-left: 5%;
+	background-color: white;
+}
+
+#ul-contact {
+	padding-left: 20px;
+}
+
+/*---------------------
+		Mobile
+---------------------*/
+
+@media screen and (max-width: 490px) {
+
+
+	/*---------------------
+			Layout
+	---------------------*/
+	
+	.container {
+		width: 92%;
+		margin: 0 4%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+	
+	.slogan {
+		line-height: 35px;
+	}
+
+	.sidebar {
+		width: 100%;
+	}
+
+	.sidebar-inner {
+		padding-bottom: 20px;
+		border-bottom: 2px solid #505050;
+		margin: 0 30px;
+		overflow: hidden;
+	}
+
+	.main {
+		width: 100%;
+		border-left: 0;
+	}
+
+	.main-inner {
+		padding-top: 20px;
+	
+	}
+
+	/*---------------------
+			Menu
+	---------------------*/
+
+	.menuicon {
+		display: block;
+		font-size: 83%;
+		cursor: pointer;
+		width: 45px;
+		float: right;
+	}
+
+	.navbar {
+		display: none;
+		clear: both;
+	}
+
+	.nav-expand {
+		display: block;
+	}
+
+	nav li {
+		float: none;
+		border-bottom: 1px solid #505050;
+	}
+
+	nav li:last-child {
+		border-bottom: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
